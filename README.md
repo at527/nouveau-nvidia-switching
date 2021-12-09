@@ -4,3 +4,7 @@
 ```
 grubby --add-kernel $(grubby --default-kernel) --copy-default --args="rd.driver.blacklist=nouveau modprobe.blacklist=nouveau nvidia-drm.modeset=1" --title "Nvidia"
 ```
+
+```
+grubby --set-default INDEX
+```
